@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Hotkey Modifier",
+    "version": "1.0",
+    "description": "An extension that responds to customizable hotkeys.",
+    "permissions": ["storage"],
+    
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+
+    "commands": {
+      "toggle-hotkey": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+H"
+        },
+        "description": "Toggle Hotkey"
+      }
+    },
+
+    "icons": {
+      "48": "icon.png"
+    },
+    
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    }
+  }
+  
