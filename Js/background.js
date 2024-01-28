@@ -1,3 +1,10 @@
+// background.js
+const myFunction = () => {
+  console.log("Hello from background.js");
+};
+
+module.exports = myFunction;
+
 let hotkeyEnabled = false;
 
 function toggleHotkey() {
